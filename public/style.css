@@ -1,11 +1,11 @@
 /****** Main Styling ******/
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: sans-serif;
 	font-size: 16px;
 	color: #222;
-	background-color: #ECF0F1;
-	text-align: center;
+	background-color: white;
+	text-align: left;
 }
 
 .container {
@@ -14,11 +14,12 @@ body {
 }
 
 .footer {
-	margin-top: 60px;
+	padding-top: 160px;
 }
 
 ol {
 	list-style-position: inside;
+  padding-left:20px;
 }
 ul {
 	list-style-type: none;
@@ -27,9 +28,10 @@ ul {
 a {
 	color: #2574A9;
 }
-/****** Logo Div Styling ******/
-
-img {
-	margin: 20px auto 0 auto;
-	display: block;
+body {
+  padding-left:60px;
+}
+#file-upload {
+  padding-top:50px;
+  text-align:center;
 }
