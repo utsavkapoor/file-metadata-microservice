@@ -8,6 +8,8 @@
 var fs = require('fs');
 var express = require('express');
 var app = express();
+var fileData = require('./views/file-metadata.js');
+
 
 if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {
@@ -37,6 +39,10 @@ app.route('/')
     .get(function(req, res) {
 		  res.sendFile(process.cwd() + '/views/index.html');
     })
+
+app.post('/upload', function (req, res, next){
+  fileData(req,res,next);
+});
 
 // Respond not found to all the wrong routes
 app.use(function(req, res, next){
