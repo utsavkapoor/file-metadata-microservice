@@ -1,1 +1,27 @@
-# Backend Challenges boilerplate - package.json
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <link href="./public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+         <h1>File Metadata Microservice</h1>
+         <h3>User Stories:</h3>
+        <ol>
+          <li>I can submit a FormData object that includes a file upload.</li>
+          <li>When I submit something, I will receive the file size in bytes within the JSON response</li>
+        </ol>
+        <form id="file-upload" enctype="multipart/form-data" method="post" action="/upload">
+             <input id="fileupload" name="Upload" type="file" />
+             <input type="submit" value="submit" id="submit" />
+        </form>
+      </div>
+  <footer class="footer">
+      <p>Created by : <a href="https://github.com/utsavkapoor" target="_blank">Utsav Kapoor</a></p>
+       <p>Free Code Camp Challenge: <a href="https://www.freecodecamp.org/challenges/file-metadata-microservice" target="_blank">File Metadata Microservice</a></p>
+     </footer>
+  </body>
+
+</html>
